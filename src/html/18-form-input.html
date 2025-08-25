@@ -38,5 +38,58 @@
         <button type="submit">전송</button>
       </fieldset>
     </form>
+
+    <hr />
+
+    <form method="post" action="https://formspree.io/f/xeqwwbwk">
+      <fieldset>
+        <legend>폼(input) 요소</legend>
+        <div>
+          <label for="userID">이름</label>
+          <input required type="text" name="name" id="userID" />
+        </div>
+        <div>
+          <label for="userPwd">비밀번호</label>
+          <input required type="password" name="password" id="userPwd" />
+        </div>
+        <div>
+          <label for="search">검색어</label>
+          <input placeholder="검색어를 입력하세요." type="search" name="search" id="search" />
+        </div>
+        <div>
+          <label for="userTel">전화번호</label>
+          <input required type="tel" name="tel" id="userTel" />
+        </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input required type="email" name="email" id="userEmail" />
+        </div>
+        <div>
+          <div>
+            <input checked type="checkbox" name="skills" id="html" />
+            <label for="html">HTML</label>
+          </div>
+          <div>
+            <input type="checkbox" name="skills" id="css" />
+            <label for="css">CSS</label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <input checked type="radio" name="team" id="team-1" />
+            <label for="team-1">회고 1팀</label>
+          </div>
+          <div>
+            <input type="radio" name="team" id="team-2" />
+            <label for="team-2">회고 2팀</label>
+          </div>
+        </div>
+        <div>
+          <button type="submit">전송</button>
+          <button type="reset">초기화</button>
+          <button type="button">버튼</button>
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>
